@@ -1,5 +1,6 @@
 # Machine-Learning-in-Synthetic-Biology_-Thesis
 This is a capstone thesis on the use of machine learning for the optimization of genetic circuits in Synthetic Biology: Focusing on Promoter prediction for gene expression in E.Coli
+
 Overview
 This project integrates gene data from a CSV file with operon information fetched from a GraphQL API. It uses Python libraries like requests, pandas, networkx, and sklearn to process and visualize this data. The system also includes a machine learning classifier for predicting gene classes based on gene names.
 
@@ -9,6 +10,7 @@ Data Integration: Merges operon data with gene data from a CSV file, including g
 Machine Learning Classification: Uses a Support Vector Machine (SVM) to classify gene functions.
 Graph Visualization: Creates a relational graph of operons, genes, promoters, and regulators.
 CSV Data Export: Saves the integrated data into a CSV file.
+
 Prerequisites
 Python 3.x with the following libraries:
 requests
@@ -19,11 +21,13 @@ sklearn
 Docker and Docker Compose to host the RegulonDB locally.
 Ngrok to expose the local instance of RegulonDB to the internet.
 Installation
+
 1. Set Up RegulonDB
 Docker:
 
 Download or copy the content of the docker-compose.yml file.
 In a terminal, navigate to the directory containing the file and run:
+
 bash
 Copy code
 docker compose pull
